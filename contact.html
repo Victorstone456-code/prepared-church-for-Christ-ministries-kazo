@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - Prepared Church for Christ Ministries Kazo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<a href="https://wa.me/256772607774" 
+   class="whatsapp-float" 
+   target="_blank">
+   <i class="fab fa-whatsapp"></i>
+</a>
+
+<body>
+
+    <div id="preloader">
+  <div class="loader-content">
+    <img src="pccm.png" alt="Church Logo">
+    <h3>Prepared Church for Christ Ministries Kazo</h3>
+  </div>
+</div>
+
+<nav>
+  <div class="logo">
+    <img src="pccm.png">
+    <h2>Prepared Church for Christ Ministries Kazo</h2>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="sermons.html">Sermons</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="hero-image">
+  <div>
+    <h1>Welcome to Prepared Church for Christ Ministries Kazo</h1>
+    <p>Contact PCCM</p>
+    <a href="about.html" class="btn">Join Us This Sunday</a>
+  </div>
+</section>
+<section class="hero">
+ 
+
+<form id="contactForm" action="https://formsubmit.co/preparedchurch8@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Church Website Message">
+
+  <h2><i class="fas fa-cross"></i> Send Us a Message</h2>
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+ <button type="submit" class="submit-btn">
+  <span class="btn-text">Send Message</span>
+  <span class="spinner" id="spinner"></span>
+</button>
+
+</form>
+
+
+<div id="form-success" style="display:none;">
+  ✨ Message Sent Successfully! We will contact you soon.
+</div>
+
+<div id="form-success" style="display:none;">
+  <div class="success-box">
+    ✨ Message Sent Successfully! ✨
+  </div>
+</div>
+
+
+<p id="success-message" style="display:none; color:green; margin-top:15px;">
+  ✅ Thank you! Your message has been sent.
+</p>
+
+<a href="tel:+25672607774" class="call-btn">
+  📞 Call Us for Free
+</a>
+
+<footer>
+  © 2026 Prepared Church for Christ Ministries Kazo
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+
+  const form = document.querySelector(".contact-form");
+  const submitBtn = document.getElementById("submitBtn");
+
+  form.addEventListener("submit", function () {
+    submitBtn.innerHTML = "Sending...";
+    submitBtn.classList.add("loading");
+    submitBtn.disabled = true;
+  });
+
+
+window.addEventListener("scroll", function() {
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+<a href="https://maps.app.goo.gl/MKUhVp5VhdKZZ9Qy7" 
+   class="floating-map-btn" 
+   target="_blank">
+   📍 Get Directions
+</a>
+
+</body>
+</html>
+
